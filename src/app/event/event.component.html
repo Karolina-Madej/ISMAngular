@@ -1,0 +1,28 @@
+<h2>Add New Event</h2>
+
+<form [formGroup]="eventForm" >
+    <div class="form-group">
+        <label for="actualUsers">Users number</label>
+        <input type="text" formControlName="actualUsers" class="form-control"  />
+       
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" formControlName="description" class="form-control"  />
+        
+    </div>
+    <div class="form-group">
+        <label for="maxUsers">Max Number of Users</label>
+        <input type="text" formControlName="maxUsers" class="form-control" />
+        
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" formControlName="name" class="form-control"  />
+        
+   
+        <button (click)="addPosts()">POST</button>
+    </div>
+    
+</form>
+
